@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike</title>
+    <link rel="stylesheet" href="element.css">
+</head>
+<body>
+    <div class="navbar">
+        
+        <div class="logo">
+            <img src="logo.png" alt="" class="src" height="80px" with="100px">
+        </div>
+<ul>
+    <li class="list"><a href="Home">Home</a></li>
+    <li class="list"><a href="lastest launches">kids</a></li>
+    <li class="list"><a href="bikes">bikes</a></li>
+    <li class="list"><a href="scooty">scooty</a></li>
+    <li class="list"><a href="offers">offers</a></li>
+    <li class="list"><a href="signin">signin</a></li>
+</ul>
+<div class="nav-search">
+    <select name="search here" id="search here">
+        <option value="search">search</option>
+        <option value="bikes">bikes</option>
+        <option value="scooty">scooty</option>
+        <option value="trending">trending</option>
+       
+    </select>
+    <input class="search-bar" placeholder="Search here">
+    <div class="search-icon">
+    </nav>
+    </div>
+</div>
+    </div>
+
+ <div class ="box">
+    <a href="">
+        <img src="bike1.png" alt="view details">
+        <img src="bike2.png" alt="view details">
+    </a>
+
+ </div>
+ <hr>
+<div class="topic">Latest release</div>
+<hr>
+<div class ="box1">
+    <a href="">
+        <img src="bike3.png" alt="view details">
+        <img src="bike4.png" alt="view details">
+    </a>
+
+ </div>
+ <div class="container">
+    
+      <h1 class= "main_heading">Connect us</h1>
+      <h2>contact information</h2>
+      <p>Name: <input type="text" name="name" /></p>
+      <p>Phone Number:<input type="text" name="Phone Number"></p>
+      <p>Email:<input type="email" name="email" id="email" /></p>
+      <p>Pincode:<input type="number" name="pincode" id="pincode" /></p>
+      </fieldset>
+      <p>
+        Adress:<textarea
+          name="adress"
+          id="adress"
+          cols="100"
+          rows="8"
+        ></textarea>
+      </p>
+   
+    <div class="container1">
+         <button type ="submit" class="btn" onclick="openPopup()">Submit</button>
+   
+    <div class="popup" id="popup">
+        <img  src ="pop_up.jpeg">
+        <p>Thanks! for submitting your details , we will contact you soon"</p>
+        <button type ="button" onclick="closePopup()">OK</button>
+    </div>
+</div>
+
+    <script>
+        let popup= document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("open-popup");
+        }
+        function closePopup(){
+            popup.classList.remove("popup");
+        }
+    </script>
+    
+      
+
+    
+
+    
+</body>
+</html>
